@@ -1,0 +1,28 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 6cb2aa87-4fc3-44a8-85c3-4c722c645506)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (text "3.3V REGULATOR" (at 165.1 41.91 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 3db75393-e590-4ccb-ae65-ea4f04cbe3a3)
+  )
+  (text "POWER SOURCE SELECTION" (at 102.87 41.91 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 7ee17b2b-3e67-4687-8415-2ae4a06891ec)
+  )
+
+  (hierarchical_label "MODULE VCC" (shape input) (at 68.58 53.34 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 5adf785d-cbf2-4470-9344-14b96ee13079)
+  )
+  (hierarchical_label "USB_VCC" (shape input) (at 68.58 46.99 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid e42b43f9-eafb-430b-81d6-120d6564700d)
+  )
+)

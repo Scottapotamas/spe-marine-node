@@ -232,7 +232,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
@@ -326,6 +326,30 @@
     [
       "0bfdf1e4-b99d-46d4-adfc-42d352d37946",
       ""
+    ],
+    [
+      "a8872965-354f-420e-ad8f-791e8338578a",
+      "USB Input"
+    ],
+    [
+      "149fe27b-2349-4bc8-8b26-1d600ef072a7",
+      "Processor"
+    ],
+    [
+      "53f921ee-8079-43f9-aa5b-2041db09aea1",
+      "Function Board"
+    ],
+    [
+      "86d6522f-71ec-4ba6-99bb-080f48f086cd",
+      "Expansion IO"
+    ],
+    [
+      "9c922b74-cbf7-4d09-83ad-72a336b3d43f",
+      "onboard-lighting"
+    ],
+    [
+      "8f621588-890f-4fc0-9198-4ddb5e4e0920",
+      "Power Regulation"
     ]
   ],
   "text_variables": {}
