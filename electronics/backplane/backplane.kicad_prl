@@ -1,7 +1,7 @@
 {
   "board": {
-    "active_layer": 0,
-    "active_layer_preset": "All Layers",
+    "active_layer": 31,
+    "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
@@ -43,7 +43,6 @@
       15,
       16,
       17,
-      18,
       19,
       20,
       21,
@@ -61,11 +60,10 @@
       34,
       35,
       36,
-      39,
       40
     ],
-    "visible_layers": "9ffffff_ffffffff",
-    "zone_display_mode": 0
+    "visible_layers": "fffffff_ffffffff",
+    "zone_display_mode": 1
   },
   "meta": {
     "filename": "backplane.kicad_prl",
