@@ -827,10 +827,10 @@
     (pin "B7" (uuid 5a700a9c-4d71-44d2-9802-50ba00208e07))
     (pin "B8" (uuid f5359783-b8e5-47db-ae8a-4428fa26d29e))
     (pin "B9" (uuid ed4dca16-7184-43bf-a602-ef447919bdec))
-    (pin "S1" (uuid 9516f8e5-8f49-4d12-93ea-aaa40e0cb32a))
-    (pin "S1" (uuid 9516f8e5-8f49-4d12-93ea-aaa40e0cb32a))
-    (pin "S1" (uuid 9516f8e5-8f49-4d12-93ea-aaa40e0cb32a))
-    (pin "S1" (uuid 9516f8e5-8f49-4d12-93ea-aaa40e0cb32a))
+    (pin "S1" (uuid 9516f8e5-8f49-4d12-93ea-aaa40e0cb32d))
+    (pin "S1" (uuid 9516f8e5-8f49-4d12-93ea-aaa40e0cb32d))
+    (pin "S1" (uuid 9516f8e5-8f49-4d12-93ea-aaa40e0cb32d))
+    (pin "S1" (uuid 9516f8e5-8f49-4d12-93ea-aaa40e0cb32d))
     (instances
       (project "backplane"
         (path "/0bfdf1e4-b99d-46d4-adfc-42d352d37946"

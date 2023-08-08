@@ -1097,9 +1097,9 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid cdc736bb-a71f-405f-9fdd-4a7d449883bf)
   )
-  (text "Power is typically 1S LiPo\nor other regulated 5V source"
-    (at 64.77 57.15 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
+  (text "Power is typically 1S LiPo\nor other regulated 5V source.\n\nSome function boards will back-power (PoE ethernet, etc)"
+    (at 91.44 57.15 0)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid e9ff7321-1967-4fac-9704-671eefe2537d)
   )
 

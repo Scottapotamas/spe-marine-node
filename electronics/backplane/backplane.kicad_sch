@@ -191,7 +191,7 @@
     (effects (font (size 2 2) (thickness 0.4) bold) (justify left bottom))
     (uuid 51dcc783-f63a-4023-bd84-69bd37e8ba7f)
   )
-  (text "General findings after diving into MicroMod ecosystem for this design!\n\nESP32, STM32, SAMD51, RP2040 don't connect (or oversubscribe) TX2.\nESP32, SAMD51, STM32 boards don't connect SPI1.\nRP2040 shares G5-8 with SPI0 lines.\n\nI haven't found any boards which correctly implement:\n- RTC battery connection\n- SWO pin on designated G11\n- \n\nOnly STM32, SAMD51 have CAN pinout connected.\n\nRP2040 lacks second (I2C1) bus connections.\n"
+  (text "General findings after diving into MicroMod ecosystem for this design!\n\nESP32, STM32, SAMD51, RP2040 don't connect (or oversubscribe) TX2.\nESP32, SAMD51, STM32 boards don't connect SPI1.\nOnly STM32, SAMD51 have CAN pinout connected.\nRP2040 lacks second (I2C1) bus connections.\nRP2040 shares G5-8 with SPI0 lines.\n\nI haven't found any boards which correctly implement:\n- RTC battery connection\n- SWO pin on designated G11"
     (at 13.97 195.58 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid fb81e0ae-db79-4341-a8df-64872617b05a)
