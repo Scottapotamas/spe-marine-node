@@ -4,6 +4,14 @@
 
   (paper "A4")
 
+  (title_block
+    (title "MicroMod Function Board")
+    (date "2023-08-09")
+    (rev "V1.0")
+    (comment 1 "Check function board and processor support before use!")
+    (comment 4 "Accepts Sparkfun's function boards")
+  )
+
   (lib_symbols
     (symbol "appli_connector:M2_SMT_SOCKET_MICROMOD_FN" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "X" (at -5.08 8.89 0)
@@ -604,8 +612,8 @@
     )
   )
 
-  (bus_alias "USART" (members "TX" "RX" "CTS" "RTS"))
   (bus_alias "UART" (members "RX" "TX"))
+  (bus_alias "USART" (members "TX" "RX" "CTS" "RTS"))
   (junction (at 95.25 139.7) (diameter 0) (color 0 0 0 0)
     (uuid 0e8a1b7f-d445-43e2-98f9-1170935ff981)
   )

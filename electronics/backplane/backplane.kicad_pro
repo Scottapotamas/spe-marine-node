@@ -45,7 +45,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -137,7 +137,7 @@
           "td_curve_segcount": 5,
           "td_on_pad_in_zone": false,
           "td_onpadsmd": true,
-          "td_onroundshapesonly": false,
+          "td_onroundshapesonly": true,
           "td_ontrackend": false,
           "td_onviapad": true
         }
@@ -475,6 +475,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 0,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,

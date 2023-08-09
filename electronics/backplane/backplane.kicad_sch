@@ -4,6 +4,12 @@
 
   (paper "A4")
 
+  (title_block
+    (title "SPE-NODE-BACKPLANE")
+    (date "2023-08-09")
+    (rev "V1.0")
+  )
+
   (lib_symbols
   )
 
@@ -181,7 +187,7 @@
     (effects (font (size 2 2) (thickness 0.4) bold) (justify left bottom))
     (uuid 51dcc783-f63a-4023-bd84-69bd37e8ba7f)
   )
-  (text "General findings after diving into MicroMod ecosystem for this design!\n\nESP32, STM32, SAMD51, RP2040 don't connect (or oversubscribe) TX2.\nESP32, SAMD51, STM32 boards don't connect SPI1.\nOnly STM32, SAMD51 have CAN pinout connected.\nRP2040 lacks second (I2C1) bus connections.\nRP2040 shares G5-8 with SPI0 lines.\n\nI haven't found any boards which correctly implement:\n- RTC battery connection\n- SWO pin on designated G11"
+  (text "General findings after diving into MicroMod ecosystem for this design!\n\nESP32, STM32, SAMD51, RP2040 don't connect (or oversubscribe) TX2.\nESP32, SAMD51, STM32 boards don't connect SPI1.\nOnly STM32, SAMD51 have CAN pinout connected.\nRP2040 lacks second (I2C1) bus connections.\nRP2040 shares G5-8 with SPI0 lines.\n\nAs a result, a lot of IO supports disconnection \nto more easily allow remapping of IO after fab...\n\nI haven't found any boards which correctly implement:\n- RTC battery connection\n- SWO pin on designated G11"
     (at 13.97 195.58 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid fb81e0ae-db79-4341-a8df-64872617b05a)
@@ -264,10 +270,6 @@
     (pin "ADC1" input (at 152.4 130.81 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 4b207148-62f1-4713-81e5-fe5f5b53f6b2)
-    )
-    (pin "G[5..9]" bidirectional (at 152.4 115.57 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 432195be-6cb7-4749-b3ef-e779a2abe618)
     )
     (instances
       (project "backplane"
