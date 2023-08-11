@@ -889,10 +889,10 @@
     (pin "B7" (uuid 5a700a9c-4d71-44d2-9802-50ba00208e07))
     (pin "B8" (uuid f5359783-b8e5-47db-ae8a-4428fa26d29e))
     (pin "B9" (uuid ed4dca16-7184-43bf-a602-ef447919bdec))
-    (pin "S1" (uuid 9516f8e5-8f49-4d12-93ea-aaa40e0cb330))
-    (pin "S1" (uuid 9516f8e5-8f49-4d12-93ea-aaa40e0cb330))
-    (pin "S1" (uuid 9516f8e5-8f49-4d12-93ea-aaa40e0cb330))
-    (pin "S1" (uuid 9516f8e5-8f49-4d12-93ea-aaa40e0cb330))
+    (pin "S1" (uuid 9516f8e5-8f49-4d12-93ea-aaa40e0cb333))
+    (pin "S1" (uuid 9516f8e5-8f49-4d12-93ea-aaa40e0cb333))
+    (pin "S1" (uuid 9516f8e5-8f49-4d12-93ea-aaa40e0cb333))
+    (pin "S1" (uuid 9516f8e5-8f49-4d12-93ea-aaa40e0cb333))
     (instances
       (project "backplane"
         (path "/0bfdf1e4-b99d-46d4-adfc-42d352d37946"
@@ -951,7 +951,7 @@
     (property "manf" "LittelFuse" (at 162.56 63.881 90)
       (effects (font (size 0.508 0.508)) hide)
     )
-    (property "manf#" " 1210L050YR" (at 162.56 63.246 90)
+    (property "manf#" "1210L050YR" (at 162.56 63.246 90)
       (effects (font (size 0.508 0.508)) hide)
     )
     (property "Supplier" "RS Online" (at 162.56 62.611 90)

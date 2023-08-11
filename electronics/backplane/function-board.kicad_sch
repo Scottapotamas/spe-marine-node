@@ -612,8 +612,8 @@
     )
   )
 
-  (bus_alias "UART" (members "RX" "TX"))
   (bus_alias "USART" (members "TX" "RX" "CTS" "RTS"))
+  (bus_alias "UART" (members "RX" "TX"))
   (junction (at 95.25 139.7) (diameter 0) (color 0 0 0 0)
     (uuid 0e8a1b7f-d445-43e2-98f9-1170935ff981)
   )

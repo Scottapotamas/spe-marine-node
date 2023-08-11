@@ -2082,31 +2082,6 @@
     )
   )
 
-  (symbol (lib_id "appli_power:+3.3V") (at 106.68 62.23 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 9e1744bf-7c53-4ad3-bc69-fcfce0e2766b)
-    (property "Reference" "#PWR026" (at 106.68 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 106.68 57.15 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 106.68 62.23 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 106.68 62.23 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 41785817-6465-4d2f-a5d1-a36bc95b13cd))
-    (instances
-      (project "backplane"
-        (path "/0bfdf1e4-b99d-46d4-adfc-42d352d37946/86d6522f-71ec-4ba6-99bb-080f48f086cd"
-          (reference "#PWR026") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "appli_mount:M2.5_SMD_4.0MM_THREADED") (at 261.62 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9e426b12-120f-4457-bfd8-bb968a9569e6)

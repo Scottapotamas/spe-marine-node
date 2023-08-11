@@ -13,9 +13,9 @@
   (lib_symbols
   )
 
-  (bus_alias "I2C" (members "SDA" "SCL"))
-  (bus_alias "USB" (members "D+" "D-"))
   (bus_alias "SPI" (members "CLK" "COPI" "CIPO" "~{CS}"))
+  (bus_alias "USB" (members "D+" "D-"))
+  (bus_alias "I2C" (members "SDA" "SCL"))
   (junction (at 175.26 80.01) (diameter 0) (color 0 0 0 0)
     (uuid 63e0fdfa-08d1-4ad7-b3f7-43f7fac15e23)
   )
