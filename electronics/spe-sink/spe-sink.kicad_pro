@@ -326,6 +326,22 @@
     [
       "f0a501c7-1ad1-4c59-9255-3d6aa4545d8b",
       ""
+    ],
+    [
+      "c444fd40-2442-4c73-bf48-a4aa084e5cc8",
+      "Ethernet MAC+PHY"
+    ],
+    [
+      "4db035f6-4a09-4a2b-8e2e-a64ccd99d7de",
+      "MicroMod Function Board"
+    ],
+    [
+      "d2c298ab-d4a2-4c33-86fb-9b17f2cedd7c",
+      "Power Regulation"
+    ],
+    [
+      "d425fecd-d9e0-4566-867f-2251b234bee9",
+      "PoDL Device Handling"
     ]
   ],
   "text_variables": {}
