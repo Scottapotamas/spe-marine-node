@@ -512,8 +512,8 @@
       (property "Value" "LED_GREEN_1608M" (at 0 -2.54 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Footprint" "" (at -2.54 0 0)
-        (effects (font (size 1.27 1.27)))
+      (property "Footprint" "Applidyne_LED:LEDC1608X80L40N" (at 0 -7.62 0)
+        (effects (font (size 1.27 1.27)) hide)
       )
       (property "Datasheet" "http://www.farnell.com/datasheets/1484480.pdf" (at 0 -5.334 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -542,7 +542,7 @@
       (property "ki_keywords" "LED, GREEN, SMD" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "DIALIGHT ChipLED Green, 0603, 1608M" (at 0 0 0)
+      (property "ki_description" "DIALIGHT ChipLED Green, 20mcd@20mA, 2V, 0603, 1608M" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_fp_filters" "LEDC1608X80L40*" (at 0 0 0)
@@ -6477,7 +6477,7 @@
     )
   )
 
-  (symbol (lib_id "appli_resistor:4K7_QUAD_ARRAY_1608M") (at 53.34 104.14 90) (unit 2)
+  (symbol (lib_id "appli_resistor:4K7_QUAD_ARRAY_1608M") (at 53.34 104.14 90) (unit 3)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8c929e75-6c99-4939-bd59-25274ba65ac2)
     (property "Reference" "R19" (at 57.15 107.95 90)
@@ -6524,7 +6524,7 @@
     (instances
       (project "spe-sink"
         (path "/f0a501c7-1ad1-4c59-9255-3d6aa4545d8b/c444fd40-2442-4c73-bf48-a4aa084e5cc8"
-          (reference "R19") (unit 2)
+          (reference "R19") (unit 3)
         )
       )
     )
@@ -7041,7 +7041,7 @@
     )
   )
 
-  (symbol (lib_id "appli_resistor:4K7_QUAD_ARRAY_1608M") (at 53.34 125.73 90) (unit 3)
+  (symbol (lib_id "appli_resistor:4K7_QUAD_ARRAY_1608M") (at 53.34 125.73 90) (unit 2)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cf61e593-e40c-421d-8fec-36c3b7442439)
     (property "Reference" "R19" (at 57.15 129.54 90)
@@ -7088,7 +7088,7 @@
     (instances
       (project "spe-sink"
         (path "/f0a501c7-1ad1-4c59-9255-3d6aa4545d8b/c444fd40-2442-4c73-bf48-a4aa084e5cc8"
-          (reference "R19") (unit 3)
+          (reference "R19") (unit 2)
         )
       )
     )
