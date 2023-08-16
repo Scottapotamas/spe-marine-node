@@ -4,6 +4,14 @@
 
   (paper "A4")
 
+  (title_block
+    (title "SPE PD Detection Circuit")
+    (date "2023-08-16")
+    (rev "V1.0")
+    (comment 2 "as Fast-startup (no classification) hardware")
+    (comment 3 "Allows device to operate in class 10-12 (10-30V)")
+  )
+
   (lib_symbols
     (symbol "appli_capacitor:10u_X7R_2012M" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "C" (at -2.286 -2.54 90)

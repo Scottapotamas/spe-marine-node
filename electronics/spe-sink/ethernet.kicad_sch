@@ -4,6 +4,14 @@
 
   (paper "A4")
 
+  (title_block
+    (title "ADIN1110 SPE Transciever")
+    (date "2023-08-16")
+    (rev "V1.0")
+    (comment 1 "All configuration pins are left in default state")
+    (comment 2 "Aims to maintain compatibility with Sparkfun ADIN1110 board")
+  )
+
   (lib_symbols
     (symbol "appli_capacitor:100n_X7R_1005M" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "C" (at -2.286 -2.54 90)
@@ -4850,7 +4858,7 @@
     )
   )
 
-  (symbol (lib_id "appli_resistor:4K7_QUAD_ARRAY_1608M") (at 53.34 82.55 90) (unit 1)
+  (symbol (lib_id "appli_resistor:4K7_QUAD_ARRAY_1608M") (at 53.34 82.55 90) (unit 3)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 14b7c6a2-40d9-48a3-a78e-08b1f90a9ca3)
     (property "Reference" "R19" (at 57.15 86.36 90)
@@ -4897,7 +4905,7 @@
     (instances
       (project "spe-sink"
         (path "/f0a501c7-1ad1-4c59-9255-3d6aa4545d8b/c444fd40-2442-4c73-bf48-a4aa084e5cc8"
-          (reference "R19") (unit 1)
+          (reference "R19") (unit 3)
         )
       )
     )
@@ -6477,7 +6485,7 @@
     )
   )
 
-  (symbol (lib_id "appli_resistor:4K7_QUAD_ARRAY_1608M") (at 53.34 104.14 90) (unit 3)
+  (symbol (lib_id "appli_resistor:4K7_QUAD_ARRAY_1608M") (at 53.34 104.14 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8c929e75-6c99-4939-bd59-25274ba65ac2)
     (property "Reference" "R19" (at 57.15 107.95 90)
@@ -6524,7 +6532,7 @@
     (instances
       (project "spe-sink"
         (path "/f0a501c7-1ad1-4c59-9255-3d6aa4545d8b/c444fd40-2442-4c73-bf48-a4aa084e5cc8"
-          (reference "R19") (unit 3)
+          (reference "R19") (unit 1)
         )
       )
     )
