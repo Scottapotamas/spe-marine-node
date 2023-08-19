@@ -1472,7 +1472,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 8a9b8b05-fcf6-4446-8cde-ec0c4358e8b3)
   )
-  (text "V_{DIV} \n= (V_{CC}*R_{A})/(R_{A}+R_{B})\n= (4.05V*1M)/(1M+470K)\n= 4.05V"
+  (text "V_{DIV} \n= (V_{CC}*R_{B})/(R_{A}+R_{B})\n= (4.05V*470K)/(1M+470K)\n= 1.295V"
     (at 99.06 130.81 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 9acde424-3a9d-4709-ab1f-89b247eb154a)
