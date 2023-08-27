@@ -11,6 +11,8 @@ uint32_t blink_timestamp = 0;
 #define SPE_FN_BOARD_RESET  26  // Fn board F5, MicroMod G2, ESP32 GPIO26
 #define SPE_FN_BOARD_CS     5   // Fn board F1, MicroMod SPI_CS, ESP32 CS0/GPIO5
 
+#define RGB_CLK  27  // Carrier/MicroMod D1, ESP32 GPIO27
+#define RGB_DATA 16   // Carrier/MicroMod RX1/AUDOUT, ESP32 GPIO16
 
 
 #define PSE_CURRENT_AMPLIFIER_GAIN (100)
@@ -18,7 +20,7 @@ uint32_t blink_timestamp = 0;
 
 #define PSE_VID_SOURCE_WARMUP_MS 7
 #define PSE_VID_SOURCE_COOLDOWN_MS 5
-#define PSE_VID_TEST_FILTER_COUNTS 5
+#define PSE_VID_TEST_FILTER_COUNTS 10
 #define PSE_VID_TEST_TIMEOUT_MS 200
 #define PSE_VID_TIMEOUT_HOLDOFF_MS 500
 #define PSE_MVFS_THRESHOLD_MA 10
@@ -236,6 +238,8 @@ void setup()
 
 void loop()
 {
+    pse_hv_current_mA();
+    
     pse_handle_pd();
    
     if(millis() - blink_timestamp >= 5000)
