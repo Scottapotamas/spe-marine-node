@@ -50,20 +50,6 @@ rgb_color hsvToRgb(uint16_t h, uint8_t s, uint8_t v)
     return rgb_color(r, g, b);
 }
 
-uint16_t breatheLED(uint8_t time) {
-    // Adjust the period and amplitude for the breathing effect
-    double period = 2.0;     // Time for one complete oscillation
-    double amplitude = 0.5;  // Brightness amplitude (0 to 1)
-
-    // Calculate the brightness using a sine wave function
-    double brightness = amplitude * sin(2.0 * M_PI * time / period) + amplitude;
-
-    // Scale the brightness
-    uint16_t scaledBrightness = brightness * 255;
-
-    return scaledBrightness;
-}
-
 void loop()
 {
   uint8_t time = millis() >> 4;
@@ -76,7 +62,6 @@ void loop()
 
   ledStrip.write(colors, ledCount, brightness);
   
-//  uint8_t pwm_val = breatheLED(time);
   ledcWrite( pwm_led_channel, time );
 
 

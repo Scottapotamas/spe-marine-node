@@ -1918,7 +1918,7 @@
     (uuid fd2df0e0-68ff-4cf8-a017-ee470dff7138)
   )
 
-  (text "3.3V 10-bit ADC\n2.5V = 3102 counts\n" (at 247.65 76.2 0)
+  (text "3.3V 12-bit ADC\n2.5V = 3102 counts\n" (at 247.65 76.2 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 00e3794c-34a7-43e5-be68-72d6da530b25)
   )

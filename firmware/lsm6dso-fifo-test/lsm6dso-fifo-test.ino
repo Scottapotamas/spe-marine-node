@@ -13,7 +13,9 @@ float imu_temp;
 void setup()
 {
   Serial.begin(500000);
- 
+  pinMode( LED_BUILTIN, OUTPUT );
+  digitalWrite( LED_BUILTIN, HIGH );
+  
   Wire.begin();
   Wire.setClock(LSM6DSO_MAX_CLK_HZ);
   
@@ -105,4 +107,6 @@ void loop()
 
   // Wait long enough to use a few FIFO slots
   delay(500);
+  digitalWrite( LED_BUILTIN, !digitalRead(LED_BUILTIN) );
+
 }

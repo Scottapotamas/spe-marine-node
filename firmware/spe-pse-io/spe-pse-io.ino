@@ -53,10 +53,8 @@ float pse_hv_current_mA( void )
 
   Serial.print("PSE counts: ");
   Serial.println(adc_sample);
-
-  Serial.print("    adc_v: ");
+  Serial.print("    adc_mv: ");
   Serial.println(adc_voltage);
-
   Serial.print("    mA: ");
   Serial.println(current_amps/1000.0f);
   
@@ -221,7 +219,7 @@ void setup()
 {
     Serial.begin(115200);
     Serial.println("MicroMod SPE PoDL PSE Fn Board");
-    Serial.println("IO test");
+    Serial.println("PD Detection and powerup demo");
 
     pinMode(LED_BUILTIN, OUTPUT);
 
@@ -233,7 +231,6 @@ void setup()
     pinMode(SPE_FN_BOARD_RESET, OUTPUT);
     pinMode(SPE_FN_BOARD_CS, OUTPUT);
 
-
 }
 
 void loop()
@@ -242,14 +239,18 @@ void loop()
     
     pse_handle_pd();
    
-    if(millis() - blink_timestamp >= 5000)
+    if( millis() - blink_timestamp >= 250 )
     {
         bool state = !digitalRead(LED_BUILTIN);
         digitalWrite(LED_BUILTIN, state ); 
         blink_timestamp = millis();
 
-        // Toggle a request for power
-        pse_enable_pd_power( state );
+        if( millis() >= 5000 )
+        {
+            // Attempt to power the downstream device
+            pse_enable_pd_power( true );
+        }
     }
+    
     delayMicroseconds(100);
 }

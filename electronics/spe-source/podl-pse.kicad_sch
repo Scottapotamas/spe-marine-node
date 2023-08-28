@@ -1982,7 +1982,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5811015e-cb18-4cbf-b6a7-7074275f93b4)
   )
-  (text "Downstream PD will attempt to identify by regulating the line voltage\nto the 4.05V to 4.7V window (though an 300mA error is optionally tolerated)"
+  (text "Downstream PD will attempt to identify by regulating the line voltage\nto the 4.05V to 4.7V window (though an 300mV error is optionally tolerated)"
     (at 187.96 68.58 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 649cf3a9-adca-4710-ab7a-c16113c41821)
