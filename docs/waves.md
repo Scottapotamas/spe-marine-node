@@ -1,16 +1,16 @@
 # Wave Height Monitoring Pipeline
 
+These notes were internal thoughts/concepts during the project design phase, and have been kept for posterity.
 
+___
 
 Pressure sensor provides depth with `0.16 mBar` resolution when used in `8192` mode which would take ~16ms of ADC oversampling.
 
 The actual design sample rate doesn't need to be this fast, but we might get better results by taking a faster stream of data and performing filtering manually.
 
-
-
 ## Test Data
 
-I've not found any high-rate data for actual wave heights, only long-term observations.
+I've not found any high-rate data for actual wave heights, only long-term observations in papers/online weather websites.
 
 Testing the visualisations can likely be done with a series of superimposed signals:
 
@@ -19,15 +19,11 @@ Testing the visualisations can likely be done with a series of superimposed sign
 - Some reasonably high frequency, low amplitude noise
 - Gaussian/white noise + quantisation effects due to sensor behaviour and data processing
 
-
-
 ## Filtering
 
 The raw signal should be filtered to retrieve as much of the original sine wave as possible, allowing for more accurate processing in later steps.
 
 To start with, implementing the leaky integrator or a rolling median would probably work fine?
-
-
 
 ## Detecting waves
 
@@ -42,8 +38,6 @@ To do this:
 - With peak/trough event pairs, calculate the height of each wave.
 - With peak event pairs, calculate the duration between them.
 - Push height + period into a new datasource of waves
-
-
 
 ## Wave classification
 
@@ -74,8 +68,6 @@ We could also render the sea-state value as per table:
 >
 > Probably do a rolling X minute scan of the wave data and take the Yth percentile of heights?
 
-
-
 ## Visualisations
 
 - Should attempt a realtime scrolling visualisation of wave height
@@ -84,16 +76,11 @@ We could also render the sea-state value as per table:
   - Significant waves get a different colour or extra annotation?
   - Maximum waves get a different colour and annotation?
 
-
-
 - Bar-chart comparing the height of each wave against the other as they are detected?
 - Chart showing timing information for waves?
 - Line-chart showing significant wave height and maximum wave height trends
   - Long-term data seems to be presented in like this https://www.qld.gov.au/environment/coasts-waterways/beach/monitoring/waves-sites/townsville
 
-
-
 - Text display of sea-state code and description
 - Text display of sea temperature
 
- 

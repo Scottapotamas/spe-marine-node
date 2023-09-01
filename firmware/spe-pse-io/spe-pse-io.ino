@@ -51,12 +51,12 @@ float pse_hv_current_mA( void )
   float shunt_voltage = adc_voltage / PSE_CURRENT_AMPLIFIER_GAIN;
   float current_amps = shunt_voltage / PSE_CURRENT_SHUNT_MILIOHMS;
 
-  Serial.print("PSE counts: ");
-  Serial.println(adc_sample);
-  Serial.print("    adc_mv: ");
-  Serial.println(adc_voltage);
-  Serial.print("    mA: ");
-  Serial.println(current_amps/1000.0f);
+//  Serial.print("PSE counts: ");
+//  Serial.println(adc_sample);
+//  Serial.print("    adc_mv: ");
+//  Serial.println(adc_voltage);
+//  Serial.print("    mA: ");
+//  Serial.println(current_amps/1000.0f);
   
   return current_amps/1000.0f;
 }
