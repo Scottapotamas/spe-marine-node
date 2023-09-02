@@ -2018,6 +2018,10 @@
     (effects (font (size 2 2) (thickness 0.6) bold) (justify left bottom))
     (uuid a0fc16cb-620e-4f1b-9f18-bd60cb556334)
   )
+  (text "TODO: Replace with higher \nvoltage rated diode" (at 107.315 83.185 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid db73be65-bd79-4a51-abb9-81ed673ac3f9)
+  )
   (text "10mA fixed constant current source\n15mA fixed option also available"
     (at 133.35 44.45 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -3290,8 +3294,8 @@
     (property "Supplier Price Break" "10" (at 118.745 73.66 0)
       (effects (font (size 0.508 0.508)) hide)
     )
-    (pin "A" (uuid dca1cfed-cd27-481a-ac69-1d01377a962b))
-    (pin "C" (uuid 410b7521-38a3-483f-8edc-0b1d57c11a26))
+    (pin "A" (uuid 3d9dbd58-3c39-46ea-80cd-28cf64db9163))
+    (pin "C" (uuid cfb0bce2-40e7-451b-a34d-47fc8c1d6dc4))
     (instances
       (project "spe-source"
         (path "/f0a501c7-1ad1-4c59-9255-3d6aa4545d8b/d94cf2f8-a9f8-40b0-8c4c-eef4bcbb8aa0"
